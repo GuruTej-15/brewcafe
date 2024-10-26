@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100vh;
+    /* overflow-y: hidden; */
+}
+.container{
+    height: 100%;
+    background-color: #faede3;
+}
+nav{
+    border-bottom: 2px dashed #f7a17a;
+    /* border: 2px solid red; */
+    height: 75px;
+    width: 100%;
+    
+}
+.logo-box {
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    height: 5em;
+    width: 12em;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    padding-left: 10em;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 
+        "BLED" 0,
+        "SCAN" 0,
+        "XELA" 0,
+        "YELA" 0;
+}
+
+.logo-box img {
+    height: 5em;
+    width: 4em;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid navy; */
+    height: calc(100% - 80px);
+}
+.content-box{
+    width: 90%;
+    height: 100%;
+}
+.text-part{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid green; */
+    height: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.material-part{
+    display: flex;
+    /* border: 2px solid red; */
+    height: calc(100% - 80px);
+}
+
+.price-summary{
+    border: 1.5px solid rgb(161, 156, 156);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 26em;
+    width: 40%;
+}
+.price-numbers{
+    border-bottom: 2px dashed rgb(154, 149, 149);
+    height: 12em;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    /* justify-content: center; */
+
+    flex-direction: column;
+}
+#mrp{
+    padding: 3em;
+    font-weight: 510;
+    color: #666260;
+}
+.total-mrp, .total-discount, .subtotal{
+    display: flex;
+    /* border: 2px solid green; */
+    width: 24em;
+    justify-content: space-between;
+}
+.subtotal{
+    /* border: 2px solid rgb(154, 149, 149); */
+    padding-top: 1em;
+    font-weight: 600;
+    color: black;
+    font-size: large;
+    width: 22em;
+}
+.proceed{
+    background-color: #eb8a52;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    padding: 1em;
+    width: 22em;
+    text-align: center;
+    margin-top: 2em;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+
+.data-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-height: 70vh;
+    width: 60%;
+    overflow-y: auto;
+    /* border: 2px solid #f7a17a; */
+}
+
+
+.data-list::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.data-list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px; 
+}
+
+.data-list::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px; 
+    border: 3px solid #f1f1f1;
+}
+
+.data-list::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.cart-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.cart-item .quantity {
+    margin: 0 10px;
+}
+
+.cart-item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cart-item .plus-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.cart-item .minus-button {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.cart-item .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.cart-item button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,123 @@
+.container {
+    height: 100%;
+}
+.content {
+    display: flex;
+    height: calc(100% - 130px);
+    /* border: 2px solid green; */
+    overflow: hidden; 
+}
+
+.text-content {
+    height: 100%;
+    width: 60%;
+    /* border: 2px solid red; */
+    overflow: auto; 
+}
+
+.image-content {
+    position: relative;
+    height: 100%;
+
+    width: 40%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+.image-content img {
+    height: 120%;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0; 
+}
+.text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-part{
+    /* border: 2px solid blue; */
+    height: 15em;
+    width: 26em;
+}
+
+.text-part h2 {
+    /* border: 2px solid green; */
+    color: rgb(148, 61, 61);
+    line-height: 2em;
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-size: 2em;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.text-part p{
+    font-style: italic;
+    padding-top: 10px;
+}
+.button-box{
+    /* border: 2px solid green; */
+    width: 26em;
+    height: 6em;
+    padding: 2em 0 0 0;
+}
+.shop-now-btn{
+    /* border: 2px solid #fc476c; */
+    width: 8em;
+    border-radius: 30px;
+    text-align: center;
+    padding: 14px;
+    background-color: #dd7734;
+    color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+}
+
+
+
+
+/* Styles for search results */
+.cart-item {
+    width: 70%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Center horizontally */
+}
+
+.cart-item img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.cart-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.cart-item button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

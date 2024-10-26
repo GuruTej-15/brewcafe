@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Cafe</title>
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="shopy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo-box">
+                    <img src="./assets/logo.png" alt="">
+                    <h4>Brew Cafe</h4>
+                </div>
+            </a>
+            <div class="navigation-part">
+                <a href="index.html">
+                    <p>Home</p>
+                </a>
+                <a href="#" id="about-us">
+                    <p>About Us</p>
+                </a>
+                <a href="#" id="contact-us">
+                    <p>Contact Us</p>
+                </a>
+
+            </div>
+            <div class="right-box">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <a href="cart.html" style="color: black;">
+                    <div class="icons-section">
+                        <i class="fa-solid fa-bag-shopping shopping-bag"></i>
+                    </div>
+                    </a>
+            </div>
+        </nav>
+
+
+
+        <div class="content" >
+            <!-- javascript for shopy-content will go here -->
+    </div>
+
+    <!-- Modal -->
+    <div id="about-us-popup" class="modal">
+        <div class="popup-content">
+            <h1>About Us</h1>
+            <p>
+                Welcome to Brew Cafe, your cozy neighborhood spot where every sip is a step closer to comfort. We believe that a great cup of coffee is more than just a drink – it’s a moment of joy, a pause in your day, and a place where good company meets incredible flavor.
+            </p>
+            <p>
+                Our journey began with a simple mission: to bring people together over exceptional coffee crafted with love. From ethically-sourced beans roasted to perfection, to handcrafted brews made with care, we aim to create a unique experience that feels like home.
+            </p>
+            <p>
+                Whether you’re here for a quick pick-me-up, a cozy afternoon, or a place to gather with friends, we’re here to make each visit special. <br> Let’s make memories, one cup at a time. <br> Welcome to Brew Cafe – where every sip feels like home.
+            </p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <!-- Contact Us Modal -->
+<div id="contact-us-popup" class="modal">
+    <div class="popup-content">
+        <h1>Contact Us</h1>
+        
+        <!-- Contact Form -->
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/gurutej.pratap.7?rdid=fvUnAWMJNPgPY0x6&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F4EYKGX42114srnFX%2F" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/gurutej-pratap-1b888731b/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/i_m_gurutej?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+        </div>
+        
+        <button id="close-contact-popup">Close</button>
+    </div>
+</div>
+    <script src="searchshopy.js"></script>
+    <script src="common.js"></script>
+    <script src="shopy.js"></script>
+</body>
+</html>

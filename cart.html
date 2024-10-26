@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Cafe</title>
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" style="text-decoration: none;">
+            <div class="logo-box">
+                <img src="./assets/logo.png" alt="">
+                <h4>Brew Cafe</h4>
+            </div>
+        </a>
+        </nav>
+
+        <div class="content">
+            <div class="content-box">
+            <div class="text-part">
+                <h2>My Cart: (<span id="item-number">0</span> items)</h2>
+            </div>
+            <div class="material-part">
+                <div class="data-list">
+                    <!-- javascript part will go here -->
+                </div>
+                <div class="price-summary">
+                    <div class="price-numbers">
+                        <h3>Price Summary</h3>
+                        <div class="total-mrp" id="mrp">
+                            <p>Total MRP (Incl. of taxes)</p>
+                            <p>₹ <span id="price-amount">0</span></p>
+                        </div>
+                        <div class="total-discount" id="mrp">
+                            <p>Total Discount</p>
+                            <p>₹ <span id="price-discount">0</span></p>
+                        </div>
+                    </div>
+                    <div class="subtotal">
+                        <p>Subtotal</p>
+                        <p>₹ <span id="price-subtotal">0</span></p>
+                    </div>
+                    <div class="proceed">
+                        <p id="proceed-btn">Proceed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
